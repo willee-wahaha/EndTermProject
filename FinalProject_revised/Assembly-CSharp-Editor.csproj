@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A8DFA67E-4D70-8573-C702-4A4141580575}</ProjectGuid>
+    <ProjectGuid>{0F528AEF-BBCF-F439-36CF-C34F7EC64097}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -296,9 +296,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -717,8 +714,48 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{1095E53F-7F02-0617-B751-54D5BB06C4F4}</Project>
+      <Project>{E4190291-0557-33EF-D6B4-D73D22CBADEB}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.Hands.csproj">
+      <Project>{51C25344-159D-7F0E-C7CA-1474F27EE21A}</Project>
+      <Name>Ultraleap.Tracking.Hands</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.Core.Editor.csproj">
+      <Project>{3E4A6939-BE92-C9A1-9AA7-18C279C38156}</Project>
+      <Name>Ultraleap.Tracking.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.Hands.Editor.csproj">
+      <Project>{BDFAF8BE-DD3E-0679-8B9B-E39542512AF8}</Project>
+      <Name>Ultraleap.Tracking.Hands.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.InteractionEngine.csproj">
+      <Project>{5B164123-297F-7159-885C-5C46E2C4F289}</Project>
+      <Name>Ultraleap.Tracking.InteractionEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
+      <Project>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</Project>
+      <Name>Ultraleap.Tracking.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.UIInput.csproj">
+      <Project>{00BB79C1-CD40-D8FD-164B-93EF60268A84}</Project>
+      <Name>Ultraleap.Tracking.UIInput</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.Core.Tests.csproj">
+      <Project>{86200858-7DFE-4983-31A2-B0D46EEEC9BA}</Project>
+      <Name>Ultraleap.Tracking.Core.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.InteractionEngine.Editor.csproj">
+      <Project>{690E7522-63B4-E6EE-F955-7D21CC5FD525}</Project>
+      <Name>Ultraleap.Tracking.InteractionEngine.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ultraleap.Tracking.UIInput.Editor.csproj">
+      <Project>{5E0DF783-7E2E-F281-FC30-C0F042A71552}</Project>
+      <Name>Ultraleap.Tracking.UIInput.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
+      <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

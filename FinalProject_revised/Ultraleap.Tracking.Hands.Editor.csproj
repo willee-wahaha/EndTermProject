@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{67A87E2C-7FFD-43E5-88BB-4A1DC93A81FB}</ProjectGuid>
+    <ProjectGuid>{BDFAF8BE-DD3E-0679-8B9B-E39542512AF8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.Hands.Editor</AssemblyName>
@@ -298,9 +298,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -695,15 +692,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Ultraleap.Tracking.Hands.csproj">
-      <Project>{131BD1BD-11ED-8124-321F-B8DFB95DCE2D}</Project>
+      <Project>{51C25344-159D-7F0E-C7CA-1474F27EE21A}</Project>
       <Name>Ultraleap.Tracking.Hands</Name>
     </ProjectReference>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</Project>
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
-      <Project>{F9E5A0FB-8ED3-F18B-B58F-92EE56E06791}</Project>
+      <Project>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</Project>
       <Name>Ultraleap.Tracking.Core</Name>
     </ProjectReference>
   </ItemGroup>

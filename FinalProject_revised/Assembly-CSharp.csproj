@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1095E53F-7F02-0617-B751-54D5BB06C4F4}</ProjectGuid>
+    <ProjectGuid>{E4190291-0557-33EF-D6B4-D73D22CBADEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -74,6 +74,7 @@
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleFacingCameraCallbacks.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\8. Swap Grasp\Scripts\SwapGraspExample.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\Cursors\ProjectionPointer.cs" />
+    <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\6. Dynamic UI\Scripts\WorkstationBehaviourExample.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleScaleUtil.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\UI\SliderVolume.cs" />
@@ -85,7 +86,10 @@
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleInteractionEmission.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\7. Moving Reference Frames\Scripts\LinearReferenceSpawner.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\2. Basic UI\MovePoseExample.cs" />
-    <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\Script\Exit.cs" />
+    <Compile Include="Assets\Script\SceneSwitch.cs" />
+    <Compile Include="Assets\Script\MusicIndex.cs" />
+    <Compile Include="Assets\Script\Select.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Version.txt" />
@@ -702,43 +706,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Ultraleap.Tracking.Hands.csproj">
-      <Project>{131BD1BD-11ED-8124-321F-B8DFB95DCE2D}</Project>
+      <Project>{51C25344-159D-7F0E-C7CA-1474F27EE21A}</Project>
       <Name>Ultraleap.Tracking.Hands</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.Editor.csproj">
-      <Project>{4FE6E55D-5472-6EC9-5651-246F0995B5D1}</Project>
+      <Project>{3E4A6939-BE92-C9A1-9AA7-18C279C38156}</Project>
       <Name>Ultraleap.Tracking.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Hands.Editor.csproj">
-      <Project>{67A87E2C-7FFD-43E5-88BB-4A1DC93A81FB}</Project>
+      <Project>{BDFAF8BE-DD3E-0679-8B9B-E39542512AF8}</Project>
       <Name>Ultraleap.Tracking.Hands.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.InteractionEngine.csproj">
-      <Project>{76512B8D-92B6-CA59-CD25-6BB459945E1D}</Project>
+      <Project>{5B164123-297F-7159-885C-5C46E2C4F289}</Project>
       <Name>Ultraleap.Tracking.InteractionEngine</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
-      <Project>{F9E5A0FB-8ED3-F18B-B58F-92EE56E06791}</Project>
+      <Project>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</Project>
       <Name>Ultraleap.Tracking.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.UIInput.csproj">
-      <Project>{B37804CD-9AA1-60A1-6DAF-B10C193AEBC9}</Project>
+      <Project>{00BB79C1-CD40-D8FD-164B-93EF60268A84}</Project>
       <Name>Ultraleap.Tracking.UIInput</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.Tests.csproj">
-      <Project>{A29246A9-F2AF-A287-C57B-3EDA33824E6B}</Project>
+      <Project>{86200858-7DFE-4983-31A2-B0D46EEEC9BA}</Project>
       <Name>Ultraleap.Tracking.Core.Tests</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.InteractionEngine.Editor.csproj">
-      <Project>{7E6ABE44-E84A-3534-5250-AAD808665E91}</Project>
+      <Project>{690E7522-63B4-E6EE-F955-7D21CC5FD525}</Project>
       <Name>Ultraleap.Tracking.InteractionEngine.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.UIInput.Editor.csproj">
-      <Project>{8251CEF2-84FC-FB0A-D380-7AAD146AF040}</Project>
+      <Project>{5E0DF783-7E2E-F281-FC30-C0F042A71552}</Project>
       <Name>Ultraleap.Tracking.UIInput.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</Project>
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
   </ItemGroup>

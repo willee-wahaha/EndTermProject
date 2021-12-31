@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F9E5A0FB-8ED3-F18B-B58F-92EE56E06791}</ProjectGuid>
+    <ProjectGuid>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.Core</AssemblyName>
@@ -53,189 +53,189 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Comment.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\TransformTweenBehaviour.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\EditTimeOnly.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Drawer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalPlane.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\KeyEnableGameObjects.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\DebugHand.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\DisableIf.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\ProduceConsumeBuffer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ConnectionMonitor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapImageRetriever.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\HandEnableDisable.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\QuickButton.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Tween.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\LeapColor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Algorithms\SmoothedVector3.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\InternalUtility.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\SphericalSection.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapXRServiceProvider.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Encoding\VectorHand.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapProfiling.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\FileChooser.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\XRHeightOffset.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\GuiRectUtil.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ExecutionOrder.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Point.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\RingBuffer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\MinMax.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\RunTimeOnly.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\Interpolators\MaterialInterpolators.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\LeapUnityExtensions.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Bezier.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Comment.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Query\QueryCollapseExtensions.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\ISpline.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\CombinablePropertyAttribute.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Algorithms\SlidingMax.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\FingerDirectionDetector.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\OnEditorChange.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\HandUtils.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\EnableDepthBuffer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\ITransformer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\AssetFolder.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\Definitions\LeapRadialSpace.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\Interpolators\ValueInterpolators.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ProfilerSample.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\BSpline.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapServiceProvider.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\AppGlobals.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Enums.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\TestHandFactory.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\DetectorLogicGate.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\CapsuleHand.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\MinHeap.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\EditorGUIPanel.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Slice.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\HermitePoseSpline.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Capsule.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Query\QueryValueGenerators.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalBox.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\ProduceConsumeBuffer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\ReadonlyList.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\PinchDetector.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\AnimationCurveUtil.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Query\Query.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\ProximityDetector.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ConnectionMonitor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Bipyramid.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ProgressBar.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\BitConverterNonAlloc.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapImageRetriever.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Pool.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\GeometryUtils.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\SXRShim.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\AbstractHoldDetector.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\FpsLabel.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalSphere.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\HandEnableDisable.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\CubicHermiteSpline\HermiteSpline.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Utils.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\AutoFind.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\QuickButton.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\ReadonlySlice.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Type.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\Interpolators\TransformInterpolators.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapTestProvider.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Tween.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\SerializableDictionary.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Query\QueryOperatorExtensions.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\CatmullRom.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ArrayPool.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\LeapColor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Movement.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\ExtendedFingerDetector.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Infix.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\TransformHistory.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\AssertHelper.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\MultiTypedReference.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\CubicHermiteSpline\HermiteSpline2.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\IIndexable.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Algorithms\SmoothedVector3.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalRect.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Either.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\InternalUtility.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\LeapXRPinchLocomotion.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\Definitions\LeapSphericalSpace.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ListAndArrayExtensions.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\SphericalSection.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\RigidHand.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\RuntimeColliderGizmos.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Frustum.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalFrustum.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\Disable.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapXRServiceProvider.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\LeapSpaceAnchor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\FingerModel.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\StreamingFolder.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\XRSupportUtil.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Encoding\VectorHand.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Algorithms\SmoothedQuaternion.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapProfiling.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\DeltaBuffer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\FileChooser.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\Definitions\LeapCylindricalSpace.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentHands.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Algorithms\SmoothedFloat.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\KeyEnableBehaviors.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Circle.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\IIndexableStruct.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\XRHeightOffset.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ExecutionOrder.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentHandEnableDisable.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Maybe.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\GuiRectUtil.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Point.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\RingBuffer.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\Detector.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\MinMax.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\Units.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\RunTimeOnly.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\InspectorName.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\LeapEyeDislocator.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\Interpolators\MaterialInterpolators.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ServiceCallbacks.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\EnumFlags.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Collision.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentPointBehaviour.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\RigidFinger.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Ease.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\SerializableHashSet.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\SkeletalFinger.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\LeapSpace.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\ISpaceComponent.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\Examples\TransformPoseSpline.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\RuntimeGizmoToggle.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\EnumEventTable.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\MainCameraProvider.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\FrameRateControls.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Plane.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\CurveBounds.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\TweenInstance.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\SingleLayer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\DebugHand.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\CapsuleHand.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\HermitePoseSpline.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ProgressBar.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\BitConverterNonAlloc.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\AbstractHoldDetector.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\CubicHermiteSpline\HermiteSpline.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Type.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\Interpolators\TransformInterpolators.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\SerializableDictionary.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ArrayPool.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\CatmullRom.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\AssertHelper.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\CubicHermiteSpline\HermiteSpline2.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\Definitions\LeapSphericalSpace.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalFrustum.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\FingerModel.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentHands.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\KeyEnableBehaviors.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentHandEnableDisable.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentPointFlags.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Sphere.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\LeapUnityExtensions.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\DisconnectionNotice.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\SkeletalHand.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\DelayBuffer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\RuntimeGizmoManager.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Deque.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Bezier.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\HandDrop.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Query\QueryCollapseExtensions.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\StreamingAsset.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\ISpline.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\ReadonlyHashSet.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Enum.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\MaxValue.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\CubicHermiteSpline\HermiteSpline3.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\TweenRunner.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentPointBehaviour.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\PoseSplineSequence.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\CombinablePropertyAttribute.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Algorithms\SlidingMax.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LeapGrid.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\IInterpolator.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\FingerDirectionDetector.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\TransformTweenBehaviour.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\PostProcessProvider.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapProvider.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\PipeFileSyntax.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Rect.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\OnEditorChange.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalSegment2.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\RigidFinger.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\ImplementsInterface.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Ease.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\HandUtils.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\SerializableHashSet.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\HandModel.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Swizzle.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\SkeletalFinger.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\EnableDepthBuffer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\Incrementable.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\ITransformer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\LeapSpace.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Hash.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\ISpaceComponent.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\Examples\TransformCatmullRomSpline.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\AssetFolder.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalSegment3.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\MultiTypedList.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\Examples\TransformPoseSpline.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\Definitions\LeapRadialSpace.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\RuntimeGizmoToggle.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\PalmDirectionDetector.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Box.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\Interpolators\ValueInterpolators.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\BSpline.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\ProfilerSample.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\EnumEventTable.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapServiceProvider.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\HermiteQuaternionSpline.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\AppGlobals.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Enums.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\SerializableType.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\IValueProxy.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\MainCameraProvider.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Pose.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\Interpolators\InterpolatorBases.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Margins.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\FrameRateControls.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalCircle.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\TransformUtil.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Direction3.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attachments\AttachmentHand.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Plane.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\CurveBounds.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Animation\Tween\Internal\TweenInstance.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\HandModelBase.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Drawer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalPlane.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\EditTimeOnly.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\DetectorLogicGate.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\EditorGUIPanel.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\ReadonlyList.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DetectionUtilities\PinchDetector.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Query\Query.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Bipyramid.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\XR\SXRShim.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\FpsLabel.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Utils.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Movement.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Query\QueryOperatorExtensions.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Infix.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\MultiTypedReference.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\RuntimeColliderGizmos.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Frustum.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\Disable.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\LeapSpaceAnchor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Algorithms\SmoothedQuaternion.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\DeltaBuffer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Space\Definitions\LeapCylindricalSpace.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Circle.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\IIndexableStruct.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Maybe.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\Units.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\InspectorName.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\EnumFlags.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\Shapes\Sphere.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\SkeletalHand.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\DelayBuffer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\RuntimeGizmoManager.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\Deque.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\ReadonlyHashSet.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\PoseSplineSequence.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LeapGrid.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\LeapProvider.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalSegment2.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\HandModel.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\Swizzle.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\Incrementable.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Splines\Examples\TransformCatmullRomSpline.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Geometry\LocalShapes\LocalSegment3.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\DataStructures\SerializableType.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\TransformUtil.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\ImplementsTypeNameDropdown.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Utils\SingleLayer.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Attributes\MinValue.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Scripts\Hands\HandTransitionBehavior.cs" />
   </ItemGroup>
@@ -492,9 +492,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -877,7 +874,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</Project>
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
   </ItemGroup>

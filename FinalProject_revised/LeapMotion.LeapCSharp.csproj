@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</ProjectGuid>
+    <ProjectGuid>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>LeapMotion.LeapCSharp</AssemblyName>
@@ -53,38 +53,38 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Frame.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\CopyFromLeapCExtensions.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Bone.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Events.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\CircularObjectBuffer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Device.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\CSharpExtensions.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\LeapQuaternion.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\StructMarshal.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\IController.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\LeapTransform.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\MemoryManager.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\DeviceList.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Image.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\FailedDeviceList.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\CopyFromLeapCExtensions.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\CopyFromOtherExtensions.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\DistortionData.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Arm.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Finger.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Config.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Connection.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Hand.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\FailedDevice.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\IController.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\TransformExtensions.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Matrix.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\PointMapping.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Frame.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Device.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\DistortionData.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\LeapC.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Controller.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\LeapTransform.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Bone.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Config.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\MessageSeverity.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Logger.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\MemoryManager.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Matrix.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Vector.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\DeviceList.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\PointMapping.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\ImageData.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\Image.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\FailedDeviceList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Runtime\Plugins\LeapCSharp\LeapMotion.LeapCSharp.asmdef" />
@@ -329,9 +329,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>

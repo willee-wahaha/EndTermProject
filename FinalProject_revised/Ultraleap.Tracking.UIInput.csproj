@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B37804CD-9AA1-60A1-6DAF-B10C193AEBC9}</ProjectGuid>
+    <ProjectGuid>{00BB79C1-CD40-D8FD-164B-93EF60268A84}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.UIInput</AssemblyName>
@@ -53,17 +53,17 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\CompressibleUI.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\Enumerations\InteractionCapability.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\Interfaces\IInputModuleEventHandler.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\Enumerations\PointerStates.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\ShoulderProjectionOriginProvider.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\PhysicsUI.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\CompressibleUI.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\Interfaces\IProjectionOriginProvider.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\PointerElement.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\Interfaces\IInputModuleEventHandler.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\Interfaces\ILeapWidget.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\UIInputCursor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\PhysicsUI.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\UIInputModule.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\Enumerations\InteractionCapability.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\PointerElement.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Scripts\UIInputCursor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking Preview\UI Input\Runtime\Ultraleap.Tracking.UIInput.asmdef" />
@@ -308,9 +308,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -693,11 +690,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</Project>
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
-      <Project>{F9E5A0FB-8ED3-F18B-B58F-92EE56E06791}</Project>
+      <Project>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</Project>
       <Name>Ultraleap.Tracking.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7E6ABE44-E84A-3534-5250-AAD808665E91}</ProjectGuid>
+    <ProjectGuid>{690E7522-63B4-E6EE-F955-7D21CC5FD525}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.InteractionEngine.Editor</AssemblyName>
@@ -53,18 +53,18 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionHandEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\IgnoreColliderForInteractionEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionBehaviourEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionSliderEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\ContactBoneParentEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionVRControllerEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionButtonEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionManagerEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionSliderEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\AnchorEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\AnchorableBehaviourEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionControllerEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\IgnoreColliderForInteractionEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionChecks.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionManagerEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionHandEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionBehaviourEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\InteractionButtonEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Editor\Ultraleap.Tracking.InteractionEngine.Editor.asmdef" />
@@ -309,9 +309,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -706,19 +703,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</Project>
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
-      <Project>{F9E5A0FB-8ED3-F18B-B58F-92EE56E06791}</Project>
+      <Project>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</Project>
       <Name>Ultraleap.Tracking.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.Editor.csproj">
-      <Project>{4FE6E55D-5472-6EC9-5651-246F0995B5D1}</Project>
+      <Project>{3E4A6939-BE92-C9A1-9AA7-18C279C38156}</Project>
       <Name>Ultraleap.Tracking.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.InteractionEngine.csproj">
-      <Project>{76512B8D-92B6-CA59-CD25-6BB459945E1D}</Project>
+      <Project>{5B164123-297F-7159-885C-5C46E2C4F289}</Project>
       <Name>Ultraleap.Tracking.InteractionEngine</Name>
     </ProjectReference>
   </ItemGroup>

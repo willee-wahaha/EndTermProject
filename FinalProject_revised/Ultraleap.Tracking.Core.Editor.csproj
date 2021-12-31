@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4FE6E55D-5472-6EC9-5651-246F0995B5D1}</ProjectGuid>
+    <ProjectGuid>{3E4A6939-BE92-C9A1-9AA7-18C279C38156}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.Core.Editor</AssemblyName>
@@ -55,31 +55,31 @@
   <ItemGroup>
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\EnumEventTableEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\StreamingFolderPropertyDrawer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\CommentEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\TransformTweenBehaviourEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\EmptyFolderUtility.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\AttachmentHandsEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\CorePreferences.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\EditorUtils.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\LeapUnityWindow.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\Hotkeys.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\XRHeightOffsetEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\LeapXRServiceProviderEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\EditorTools\LeapPreferences.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\EditorTools\LeapProjectChecks.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\LeapImageRetrieverEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\CustomEditorBase.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\CombinablePropertyDrawer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Utils\StringPathUtils.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\SerializableHashSetEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\LeapEyeDislocatorEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\StreamingAssetPropertyDrawer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\PostProcessProviderEditor.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\AssetFolderPropertyDrawer.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\SerializableDictionaryEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\CustomPropertyDrawerBase.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\LeapServiceProviderEditor.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\SingleLayerEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\AttachmentHandsEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Utils\StringPathUtils.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\LeapEyeDislocatorEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\SerializableDictionaryEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\CommentEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\EmptyFolderUtility.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\EditorUtils.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\Hotkeys.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\EditorTools\LeapProjectChecks.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\LeapImageRetrieverEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\AssetFolderPropertyDrawer.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\EditorTools\LeapPreferences.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\CustomEditorBase.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\SerializableHashSetEditor.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Scripts\PostProcessProviderEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Editor\Ultraleap.Tracking.Core.Editor.asmdef" />
@@ -324,9 +324,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -721,11 +718,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</Project>
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
-      <Project>{F9E5A0FB-8ED3-F18B-B58F-92EE56E06791}</Project>
+      <Project>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</Project>
       <Name>Ultraleap.Tracking.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A29246A9-F2AF-A287-C57B-3EDA33824E6B}</ProjectGuid>
+    <ProjectGuid>{86200858-7DFE-4983-31A2-B0D46EEEC9BA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.Core.Tests</AssemblyName>
@@ -55,30 +55,30 @@
   <ItemGroup>
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\MinHeapTest.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\DequeTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\TransformCopyTest.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\HandFactoryTest.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\BitConverterNonAllocTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\FromThenTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\StructMarshalTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\DeviceTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\CircularObjectBufferTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\StationaryTestLeapProvider.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\MultiTypedReferenceTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\TransformUtilTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\ListAndArrayExtensionTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\LeapCStressTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\MultiTypedListTests.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\TransformCopyTest.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\ProduceConsumeBufferTest.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\SlidingMaxTest.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\HandFactoryTest.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\ObjectEquality.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\UtilsTests.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\LeapCTests.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\BitConverterNonAllocTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\FrameValidator.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\FromThenTests.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\VectorHandTests.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\StructMarshalTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\LeapTestBase.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\TweenTests.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\DeviceTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\VectorTests.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\QueryTests.cs" />
-    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\CircularObjectBufferTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\MultiTypedReferenceTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\SlidingMaxTest.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\TweenTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\LeapCTests.cs" />
+    <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Scripts\VectorHandTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking\Core\Tests\Ultraleap.Tracking.Core.Tests.asmdef" />
@@ -323,9 +323,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -720,11 +717,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{430C3A4E-AF7B-7C31-7B73-0C77EAC7B62B}</Project>
+      <Project>{3026C206-8D90-FC24-7D51-25FDAC5BC822}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
-      <Project>{F9E5A0FB-8ED3-F18B-B58F-92EE56E06791}</Project>
+      <Project>{DECE5E78-DE9C-DBF1-3EE0-6B522091D2F0}</Project>
       <Name>Ultraleap.Tracking.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8251CEF2-84FC-FB0A-D380-7AAD146AF040}</ProjectGuid>
+    <ProjectGuid>{5E0DF783-7E2E-F281-FC30-C0F042A71552}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.UIInput.Editor</AssemblyName>
@@ -299,9 +299,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
@@ -695,8 +692,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Ultraleap.Tracking.Core.Editor.csproj">
+      <Project>{3E4A6939-BE92-C9A1-9AA7-18C279C38156}</Project>
+      <Name>Ultraleap.Tracking.Core.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.UIInput.csproj">
-      <Project>{B37804CD-9AA1-60A1-6DAF-B10C193AEBC9}</Project>
+      <Project>{00BB79C1-CD40-D8FD-164B-93EF60268A84}</Project>
       <Name>Ultraleap.Tracking.UIInput</Name>
     </ProjectReference>
   </ItemGroup>
