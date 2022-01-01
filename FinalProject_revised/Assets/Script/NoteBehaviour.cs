@@ -13,6 +13,6 @@ public class NoteBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition -= new Vector3(0, 0, MusicSheet.speed*Time.deltaTime);
+        if(MusicSheet.sheetGo) transform.localPosition -= new Vector3(0, 0, MusicSheet.speed*Time.deltaTime);
     }
 }

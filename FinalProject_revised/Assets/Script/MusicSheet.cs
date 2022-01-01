@@ -11,4 +11,8 @@ public class MusicSheet : MonoBehaviour
     public static float[][] musicSheet = { music0, music1, music2, music3};
 
     public static float speed = 1;
+
+    public static bool sheetGo = false;
+
+    public static int maxComb = 0, comb = 0, hit = 0, miss = 0;
 }

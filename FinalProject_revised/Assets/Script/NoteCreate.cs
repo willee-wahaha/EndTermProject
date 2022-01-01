@@ -10,9 +10,14 @@ public class NoteCreate : MonoBehaviour
     public Transform audio;
     private AudioSource music;
     private System.Random rnd = new System.Random();
+    private float CountDown = 3, timeCount = 0;
     // Start is called before the first frame update
     void Start()
     {
+        MusicSheet.sheetGo = false;
+        CountDown = 3;
+        timeCount = 0;
+
         float[] sheet = MusicSheet.musicSheet[MusicIndex.index];
         for(int i=0; i<sheet.Length; i++)
         {
@@ -22,12 +27,35 @@ public class NoteCreate : MonoBehaviour
         }
 
         music = audio.GetChild(MusicIndex.index).GetComponent<AudioSource>();
-        music.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(music.isPlaying == false) SceneManager.LoadScene(3);
+        if (!MusicSheet.sheetGo) timeCount += Time.deltaTime;
+        if(timeCount >= 1)
+        {
+            timeCount = 0;
+            CountDown--;
+            if(CountDown == 0)
+            {
+                MusicSheet.sheetGo = true;
+                music.Play();
+            }
+        }
+        if(music.isPlaying == false && MusicSheet.sheetGo)
+        {
+            timeCount += Time.deltaTime;
+            if(timeCount >= 1)
+            {
+                timeCount = 0;
+                CountDown++;
+                if (CountDown == 3)
+                {
+                    MusicSheet.sheetGo = false;
+                    SceneManager.LoadScene(3);
+                }
+            }
+        }
     }
 }
