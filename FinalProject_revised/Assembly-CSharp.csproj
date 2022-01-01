@@ -53,11 +53,15 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Select.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\3. Interaction Callbacks\Scripts\TransformHandle.cs" />
+    <Compile Include="Assets\Script\MusicSheet.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Hands Examples\Scripts\CycleHandPairs.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Android_XR2\Runtime\Scripts\SlowWake.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\SoundOverrides.cs" />
+    <Compile Include="Assets\Script\NoteCreate.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\7. Moving Reference Frames\Scripts\Spaceship.cs" />
+    <Compile Include="Assets\Script\Texttest.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\7. Moving Reference Frames\Scripts\AngularSpeedTextBehaviour.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\5. Anchors\SimpleAnchorFeedback.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\3. Interaction Callbacks\Scripts\TransformRotationHandle.cs" />
@@ -68,11 +72,14 @@
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\Cursors\SquishyPointer.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\UI\ScrollRectVolume.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleInteractionGlow.cs" />
+    <Compile Include="Assets\Script\CoverInitial.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\UI\ToggleToggler.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\3. Interaction Callbacks\Scripts\TransformTool.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleTransformUtil.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleFacingCameraCallbacks.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\8. Swap Grasp\Scripts\SwapGraspExample.cs" />
+    <Compile Include="Assets\Script\SceneSwitch.cs" />
+    <Compile Include="Assets\Script\NoteBehaviour.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\Cursors\ProjectionPointer.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\6. Dynamic UI\Scripts\WorkstationBehaviourExample.cs" />
@@ -80,6 +87,7 @@
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\UI\SliderVolume.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleRendererUtil.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\UI\SliderShadow.cs" />
+    <Compile Include="Assets\Script\MusicIndex.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\6. Dynamic UI\Scripts\SimpleMatchAnchorScaleAndState.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\7. Moving Reference Frames\Scripts\LinearSpeedTextBehaviour.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Core Examples\Example Assets\ProjectionPostProcessProvider.cs" />
@@ -87,9 +95,6 @@
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\7. Moving Reference Frames\Scripts\LinearReferenceSpawner.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\2. Basic UI\MovePoseExample.cs" />
     <Compile Include="Assets\Script\Exit.cs" />
-    <Compile Include="Assets\Script\SceneSwitch.cs" />
-    <Compile Include="Assets\Script\MusicIndex.cs" />
-    <Compile Include="Assets\Script\Select.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Version.txt" />
