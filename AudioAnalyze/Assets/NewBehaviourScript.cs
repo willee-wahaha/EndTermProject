@@ -10,12 +10,14 @@ public class NewBehaviourScript : MonoBehaviour
     public Transform t;
     public float time = 0, timecount = 0;
     float lastdb = 0, db = 0;
-    FileInfo fileInfo = new FileInfo(@"E:\Unity\EndTermProject\sheet\Test.txt");
-    
+    public string name = "m0";
+    FileInfo fileInfo;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        fileInfo = new FileInfo(@"E:\Unity\EndTermProject\sheet\"+ name +".txt");
         StreamWriter sw = fileInfo.CreateText();
         sw.WriteLine();
         sw.Flush();
@@ -56,7 +58,7 @@ public class NewBehaviourScript : MonoBehaviour
             if ((db - lastdb) / db >= 0.1 && db >= 0.02)
             {
                 StreamWriter sw = fileInfo.AppendText();
-                sw.WriteLine(time);
+                sw.Write(time + "f, ");
                 sw.Flush();
                 sw.Close();
             }

@@ -13,20 +13,13 @@ public class NoteCreate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string fileName = @"E:\Unity\EndTermProject\sheet\m" + MusicIndex.index.ToString()+ ".txt";
-        StreamReader sr = new StreamReader(fileName);
-        
-        while(true)
+        float[] sheet = MusicSheet.musicSheet[MusicIndex.index];
+        for(int i=0; i<sheet.Length; i++)
         {
-            string s = sr.ReadLine();
-            if (s == null) break;
-
             Transform n = Instantiate(note);
             n.parent = transform;
-            n.localPosition = new Vector3(rnd.Next(-1,2)*0.1f, rnd.Next(-1, 2)*0.1f, float.Parse(s)*MusicSheet.speed);
+            n.localPosition = new Vector3(rnd.Next(-1, 2) * 0.1f, rnd.Next(-1, 2) * 0.1f, sheet[i] * MusicSheet.speed);
         }
-
-        sr.Close();
 
         music = audio.GetChild(MusicIndex.index).GetComponent<AudioSource>();
         music.Play();
