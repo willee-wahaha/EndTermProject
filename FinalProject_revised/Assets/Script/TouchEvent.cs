@@ -1,5 +1,6 @@
 using Leap.Unity;
 using Leap.Unity.Interaction;
+using Leap.InteractionEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,15 +43,15 @@ namespace UHI.Tracking.InteractionEngine.Examples
         void Update()
         {
             //手抓取時動作
-            if (_intObj.isGrasped)
+            _intObj.OnContactBegin = () =>
             {
-                Destroy(gameObject);
+                Destroy(transform.gameObject);
                 MusicSheet.comb++;
                 if (MusicSheet.maxComb < MusicSheet.comb) MusicSheet.maxComb = MusicSheet.comb;
                 MusicSheet.hit++;
                 MusicSheet.iscomb = true;
                 MusicSheet.ismiss = false;
-            }
+            };
 
             //手覆蓋的時候做動作，可以隔一段距離
             if (_intObj.isHovered)
