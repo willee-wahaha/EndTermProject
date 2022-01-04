@@ -34,7 +34,7 @@ public class StateShow : MonoBehaviour
             }
 
             Transform s = Instantiate(state.GetChild(0));
-            s.parent = transform;
+            s.SetParent(transform);
             s.localPosition = Vector3.zero;
         }
         else

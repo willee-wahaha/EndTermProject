@@ -13,7 +13,7 @@ public class NoteBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.parent.name != "NoteCreater") Destroy(transform.gameObject);
+        if (transform.parent == null) Destroy(transform.gameObject);
 
         if (MusicSheet.sheetGo) transform.localPosition -= new Vector3(0, 0, MusicSheet.speed*Time.deltaTime);
 
