@@ -79,12 +79,14 @@
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleFacingCameraCallbacks.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\8. Swap Grasp\Scripts\SwapGraspExample.cs" />
     <Compile Include="Assets\Script\SceneSwitch.cs" />
+    <Compile Include="Assets\Script\CombShow.cs" />
     <Compile Include="Assets\Script\NoteBehaviour.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\Cursors\ProjectionPointer.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\6. Dynamic UI\Scripts\WorkstationBehaviourExample.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleScaleUtil.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\UI\SliderVolume.cs" />
+    <Compile Include="Assets\Script\TextShow.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\Common Example Assets\Scripts\SimpleRendererUtil.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Examples\UI Input Examples\Scripts\UI\SliderShadow.cs" />
     <Compile Include="Assets\Script\MusicIndex.cs" />
@@ -95,8 +97,8 @@
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\7. Moving Reference Frames\Scripts\LinearReferenceSpawner.cs" />
     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Examples\Interaction Engine Examples\2. Basic UI\MovePoseExample.cs" />
     <Compile Include="Assets\Script\Exit.cs" />
-    <Compile Include="Assets\Script\CombShow.cs" />
-    <Compile Include="Assets\Script\TextShow.cs" />
+    <Compile Include="Assets\Script\TouchEvent.cs" />
+    <Compile Include="Assets\Script\StateShow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\Ultraleap\Tracking Preview\Version.txt" />

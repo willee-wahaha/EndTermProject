@@ -14,7 +14,8 @@ public class NoteCreate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MusicSheet.sheetGo = false;
+        MusicSheet.Reset();
+
         CountDown = 3;
         timeCount = 0;
 
