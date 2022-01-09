@@ -11,6 +11,6 @@ public class CoverInitial : MonoBehaviour
         Transform c = Instantiate(covers.GetChild(MusicIndex.index));
         c.parent = transform;
         c.localPosition = Vector3.zero;
-        c.localScale = new Vector3(1,1,1);
+        c.localScale = new Vector3(0.8f,0.8f,0.8f);
     }
 }

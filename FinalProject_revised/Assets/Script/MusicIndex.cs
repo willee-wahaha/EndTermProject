@@ -5,5 +5,5 @@ using UnityEngine;
 public class MusicIndex : MonoBehaviour
 {
     public static int index = 0;
-    public static int numOfMusic = 4;
+    public static int numOfMusic = 7;
 }

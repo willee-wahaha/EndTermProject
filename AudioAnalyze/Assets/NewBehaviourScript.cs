@@ -10,14 +10,14 @@ public class NewBehaviourScript : MonoBehaviour
     public Transform t, c;
     public float time = 0, timecount = 0;
     float lastdb = 0, lastdb2 = 0, db = 0, db2 = 0;
-    public string name = "m0";
+    public string file = "m0";
     FileInfo fileInfo;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        fileInfo = new FileInfo(@"E:\Unity\EndTermProject\sheet\"+ name +".txt");
+        fileInfo = new FileInfo(@"E:\Unity\EndTermProject\sheet\"+ file +".txt");
         StreamWriter sw = fileInfo.CreateText();
         sw.WriteLine();
         sw.Flush();
@@ -48,7 +48,6 @@ public class NewBehaviourScript : MonoBehaviour
             if (i < 500)
             {
                 Tempdb += spectrumData[i];
-                Tempdb2 += spectrumData[i];
             }
             else if(i < 5000)
             {
@@ -58,7 +57,7 @@ public class NewBehaviourScript : MonoBehaviour
             if (spectrumData[i] > maxdb) maxdb = spectrumData[i];
         }
 
-        Debug.Log(Tempdb + Tempdb2);
+        Debug.Log(maxdb);
         if (Tempdb > db) db = Tempdb;
         if (Tempdb2 > db2) db2 = Tempdb2;
 
@@ -66,7 +65,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             StreamWriter sw = fileInfo.AppendText();
 
-            if (((db - lastdb) / (lastdb+0.001) >= 0.1 && maxdb >= 1) || ((db - lastdb) / (lastdb + 0.001) >= 0.25 && maxdb >= 0.05) ||¡@maxdb >= 2)
+            if (((db - lastdb) / (lastdb+0.001) >= 0.1 && maxdb >= 0.07) || ((db - lastdb) / (lastdb + 0.001) >= 0.25 && maxdb >= 0.01 && maxdb < 0.07) ||¡@maxdb >= 1)
             {
                 
                 sw.Write(time + "f, ");
@@ -75,7 +74,7 @@ public class NewBehaviourScript : MonoBehaviour
                 n.localPosition = new Vector3(time, -10, 0);
             }
 
-            if (((db2 - lastdb2) / (lastdb2 + 0.001) >= 0.1 && maxdb >= 1) || ((db2 - lastdb2) / (lastdb2 + 0.001) >= 0.25 && maxdb >= 0.05) || maxdb >= 2)
+            if (((db2 - lastdb2) / (lastdb2 + 0.001) >= 0.1 && maxdb >= 0.07) || ((db2 - lastdb2) / (lastdb2 + 0.001) >= 0.25 && maxdb >= 0.01 && maxdb < 0.07) || maxdb >= 1)
             {
                 sw.Write(time + "f, ");
                 Transform n = Instantiate(c);
