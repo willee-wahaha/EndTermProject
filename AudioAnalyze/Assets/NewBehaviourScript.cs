@@ -65,7 +65,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             StreamWriter sw = fileInfo.AppendText();
 
-            if (((db - lastdb) / (lastdb+0.001) >= 0.1 && maxdb >= 0.07) || ((db - lastdb) / (lastdb + 0.001) >= 0.25 && maxdb >= 0.01 && maxdb < 0.07) ||¡@maxdb >= 1)
+            if (((db - lastdb) / (lastdb + 0.001) >= 0.25 && maxdb >= 0.02) ||¡@maxdb >= 1.5)
             {
                 
                 sw.Write(time + "f, ");
@@ -74,7 +74,7 @@ public class NewBehaviourScript : MonoBehaviour
                 n.localPosition = new Vector3(time, -10, 0);
             }
 
-            if (((db2 - lastdb2) / (lastdb2 + 0.001) >= 0.1 && maxdb >= 0.07) || ((db2 - lastdb2) / (lastdb2 + 0.001) >= 0.25 && maxdb >= 0.01 && maxdb < 0.07) || maxdb >= 1)
+            if (((db2 - lastdb2) / (lastdb2 + 0.001) >= 0.25 && maxdb >= 0.02) || maxdb >= 1.5)
             {
                 sw.Write(time + "f, ");
                 Transform n = Instantiate(c);

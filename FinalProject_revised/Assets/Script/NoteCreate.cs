@@ -24,7 +24,7 @@ public class NoteCreate : MonoBehaviour
         {
             Transform n = Instantiate(note);
             n.parent = transform;
-            n.localPosition = new Vector3(rnd.Next(-1, 2) * 0.1f, rnd.Next(-1, 2) * 0.1f, sheet[i] * MusicSheet.speed);
+            n.localPosition = new Vector3(rnd.Next(-1, 2) * 0.1f, -0.5f * 0.1f, sheet[i] * MusicSheet.speed);
         }
 
         music = audio.GetChild(MusicIndex.index).GetComponent<AudioSource>();
