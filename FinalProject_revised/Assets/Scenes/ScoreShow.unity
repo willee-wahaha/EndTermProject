@@ -2530,6 +2530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   covers: {fileID: 2140707190}
+  scale: 0.8
 --- !u!1 &2140707189
 GameObject:
   m_ObjectHideFlags: 0
