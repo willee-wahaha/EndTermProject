@@ -18,4 +18,4 @@ DirectX版本: 11或以上<br>
 
 ## GitHub連結
 
-https://github.com/willee-wahaha/EndTermProject.git<>
+https://github.com/willee-wahaha/EndTermProject.git<br>
