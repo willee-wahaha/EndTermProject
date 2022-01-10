@@ -15,3 +15,7 @@ DirectX版本: 11或以上<br>
 在遊戲中運用Leap Motion Controller操控畫面中的手觸碰空中的方塊<br>
 
 歌曲結束後會出現分數結算畫面，此時按Continue會回到選取歌曲的畫面<br>
+
+## GitHub連結
+
+https://github.com/willee-wahaha/EndTermProject.git<>
