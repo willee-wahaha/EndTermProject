@@ -8621,7 +8621,7 @@ MonoBehaviour:
   c: {fileID: 1704321465}
   time: 0
   timecount: 0
-  file: m0
+  file: E:\Unity\EndTermProject\sheet\m0.txt
 --- !u!4 &1194549545
 Transform:
   m_ObjectHideFlags: 0

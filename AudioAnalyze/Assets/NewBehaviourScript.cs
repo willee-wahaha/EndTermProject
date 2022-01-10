@@ -10,14 +10,14 @@ public class NewBehaviourScript : MonoBehaviour
     public Transform t, c;
     public float time = 0, timecount = 0;
     float lastdb = 0, lastdb2 = 0, db = 0, db2 = 0;
-    public string file = "m0";
+    public string file = @"E:\Unity\EndTermProject\sheet\m0.txt";
     FileInfo fileInfo;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        fileInfo = new FileInfo(@"E:\Unity\EndTermProject\sheet\"+ file +".txt");
+        fileInfo = new FileInfo(file);
         StreamWriter sw = fileInfo.CreateText();
         sw.WriteLine();
         sw.Flush();

@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 115
+  controlID: 159
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 116
+  controlID: 16
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 58
+  controlID: 17
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -498,9 +498,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 06100000
+      m_SelectedIDs: 60470000
       m_LastClickedID: 0
-      m_ExpandedIDs: 5890ffff8090ffffc091ffffcc91ffffd691ffffe091ffff52fbffff
+      m_ExpandedIDs: 6af7ffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.07641949, y: 0.012564714, z: -0.000963193, w: 0.9969975}
     speed: 2
-    m_Value: {x: 0.07641939, y: 0.012564697, z: -0.00096319173, w: 0.99699616}
+    m_Value: {x: -0.076419495, y: -0.012564715, z: 0.000963193, w: -0.99699754}
   m_Size:
     m_Target: 292.49808
     speed: 2
@@ -715,21 +715,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Unity\EndTermProject\FinalProject_revised
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 48470000
-    m_LastClickedID: 18248
+    m_SelectedIDs: 46470000
+    m_LastClickedID: 18246
     m_ExpandedIDs: 000000003447000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
