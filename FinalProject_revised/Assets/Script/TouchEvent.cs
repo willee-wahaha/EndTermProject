@@ -45,7 +45,7 @@ namespace UHI.Tracking.InteractionEngine.Examples
             //手抓取時動作
             _intObj.OnContactBegin = () =>
             {
-                Destroy(transform.gameObject);
+                Destroy(transform.parent.gameObject);
                 MusicSheet.comb++;
                 if (MusicSheet.maxComb < MusicSheet.comb) MusicSheet.maxComb = MusicSheet.comb;
                 MusicSheet.hit++;
