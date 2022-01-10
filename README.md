@@ -1,10 +1,14 @@
 # EndTermProject
 
-##推薦操作環境
+## 推薦操作環境
 
 作業系統: Windows 10<br>
 DirectX版本: 11或以上<br>
 額外: 需安裝 Leap motion driver 並使用 Leap Motion Controller<br>
+
+## 遊戲內容
+
+搭配偵測器，用手碰觸節奏方塊，跟著不同的歌曲律動~!<br>
 
 ## End Project操作說明
 
